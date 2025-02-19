@@ -1,20 +1,17 @@
-// CLASS CHALLENGE SUBMISSION ASSIGNMENT.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
-
+#include "Shape.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+    // Create objects of each shape
+    Rectangle rect("Red", 10, 5);
+    Triangle tri("Blue", 6, 8);
+    Circle circ("Green", 7);
+
+    // Display areas
+    cout << "Rectangle Color: " << rect.getColor() << ", Area: " << rect.getArea() << endl;
+    cout << "Triangle Color: " << tri.getColor() << ", Area: " << tri.getArea() << endl;
+    cout << "Circle Color: " << circ.getColor() << ", Area: " << circ.getArea() << endl;
+
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
